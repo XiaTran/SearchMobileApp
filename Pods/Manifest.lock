@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.7.3)
+  - JGProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - JGProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - JGProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+
+PODFILE CHECKSUM: c45ce72a9a035919751a63c2b9b43c4e5c755219
+
+COCOAPODS: 1.5.3

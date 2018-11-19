@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5896957969703F69AC60AF55 /* Pods_SearchMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A184E644EEC680146D5EEC /* Pods_SearchMobileApp.framework */; };
+		CD0ACA8B21A3161F004DE364 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACA8A21A3161F004DE364 /* Structs.swift */; };
 		CD8C9A20219C373B00509112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A1F219C373B00509112 /* AppDelegate.swift */; };
-		CD8C9A22219C373B00509112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A21219C373B00509112 /* ViewController.swift */; };
+		CD8C9A22219C373B00509112 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A21219C373B00509112 /* TableViewController.swift */; };
 		CD8C9A25219C373B00509112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8C9A23219C373B00509112 /* Main.storyboard */; };
 		CD8C9A28219C373B00509112 /* SearchMobileApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A26219C373B00509112 /* SearchMobileApp.xcdatamodeld */; };
 		CD8C9A2A219C373D00509112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8C9A29219C373D00509112 /* Assets.xcassets */; };
 		CD8C9A2D219C373D00509112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8C9A2B219C373D00509112 /* LaunchScreen.storyboard */; };
+		CD8C9A56219DBB3F00509112 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A55219DBB3F00509112 /* ArtistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25A184E644EEC680146D5EEC /* Pods_SearchMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97351ADC6D489C7B893C8D9F /* Pods-SearchMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMobileApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchMobileApp/Pods-SearchMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0ACA8A21A3161F004DE364 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		CD8C9A1C219C373B00509112 /* SearchMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8C9A1F219C373B00509112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD8C9A21219C373B00509112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD8C9A21219C373B00509112 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD8C9A24219C373B00509112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD8C9A27219C373B00509112 /* SearchMobileApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchMobileApp.xcdatamodel; sourceTree = "<group>"; };
 		CD8C9A29219C373D00509112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8C9A2C219C373D00509112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD8C9A2E219C373D00509112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8C9A55219DBB3F00509112 /* ArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
+		EADD240B37F595AC4C3DE146 /* Pods-SearchMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMobileApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchMobileApp/Pods-SearchMobileApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5896957969703F69AC60AF55 /* Pods_SearchMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4038D19D56D647C5C514DA5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97351ADC6D489C7B893C8D9F /* Pods-SearchMobileApp.debug.xcconfig */,
+				EADD240B37F595AC4C3DE146 /* Pods-SearchMobileApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78A2622DC4DE2E69889C8D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A184E644EEC680146D5EEC /* Pods_SearchMobileApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD8C9A13219C373B00509112 = {
 			isa = PBXGroup;
 			children = (
 				CD8C9A1E219C373B00509112 /* SearchMobileApp */,
 				CD8C9A1D219C373B00509112 /* Products */,
+				4038D19D56D647C5C514DA5E /* Pods */,
+				78A2622DC4DE2E69889C8D6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				CD8C9A1F219C373B00509112 /* AppDelegate.swift */,
-				CD8C9A21219C373B00509112 /* ViewController.swift */,
+				CD0ACA8A21A3161F004DE364 /* Structs.swift */,
+				CD8C9A21219C373B00509112 /* TableViewController.swift */,
+				CD8C9A55219DBB3F00509112 /* ArtistView.swift */,
 				CD8C9A23219C373B00509112 /* Main.storyboard */,
 				CD8C9A29219C373D00509112 /* Assets.xcassets */,
 				CD8C9A2B219C373D00509112 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD8C9A31219C373D00509112 /* Build configuration list for PBXNativeTarget "SearchMobileApp" */;
 			buildPhases = (
+				0A2EE3F29489BE67F16001FD /* [CP] Check Pods Manifest.lock */,
 				CD8C9A18219C373B00509112 /* Sources */,
 				CD8C9A19219C373B00509112 /* Frameworks */,
 				CD8C9A1A219C373B00509112 /* Resources */,
+				A1245BD4D486872DFF11E78A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A2EE3F29489BE67F16001FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchMobileApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1245BD4D486872DFF11E78A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SearchMobileApp/Pods-SearchMobileApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchMobileApp/Pods-SearchMobileApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD8C9A18219C373B00509112 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8C9A22219C373B00509112 /* ViewController.swift in Sources */,
+				CD8C9A22219C373B00509112 /* TableViewController.swift in Sources */,
+				CD8C9A56219DBB3F00509112 /* ArtistView.swift in Sources */,
+				CD0ACA8B21A3161F004DE364 /* Structs.swift in Sources */,
 				CD8C9A20219C373B00509112 /* AppDelegate.swift in Sources */,
 				CD8C9A28219C373B00509112 /* SearchMobileApp.xcdatamodeld in Sources */,
 			);
@@ -284,6 +359,7 @@
 		};
 		CD8C9A32219C373D00509112 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97351ADC6D489C7B893C8D9F /* Pods-SearchMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +378,7 @@
 		};
 		CD8C9A33219C373D00509112 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADD240B37F595AC4C3DE146 /* Pods-SearchMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
