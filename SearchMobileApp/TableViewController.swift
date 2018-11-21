@@ -10,8 +10,6 @@ import UIKit
 import Alamofire
 import JGProgressHUD
 
-
-
 class TableViewController: UITableViewController,UISearchBarDelegate {
 
   @IBOutlet weak var searchBar: UISearchBar!
@@ -39,7 +37,7 @@ class TableViewController: UITableViewController,UISearchBarDelegate {
       artistImageAndName.removeAll()
     hud.textLabel.text = "Searching..."
     hud.show(in: view, animated: true)
-    callAlamo(url: searchURL)
+    callAlamo(url: searchURL, headers: ["Content-Type": "application/x-www-form-urlencoded"])
     
     searchBar.endEditing(true)
     self.hud.dismiss(afterDelay: 2, animated: true)
@@ -54,10 +52,17 @@ class TableViewController: UITableViewController,UISearchBarDelegate {
   }
   
   //calls the parsed data
-  func callAlamo(url: String) {
-    Alamofire.request(url).responseJSON(completionHandler: {
+  func callAlamo(url: String, headers: [String : String]? = [:]) {
+    Alamofire.request(url, headers: headers).responseJSON(completionHandler: {
       response in
-      self.parseData(JSONData: response.data!)
+      switch response.result {
+      case .success:
+               self.parseData(JSONData: response.data!)
+      case .failure(let error):
+        print("Error when serialising the url: \(error)")
+        self.hud.textLabel.text = "Error: Check artist name is correct"
+        self.hud.dismiss(afterDelay: 2, animated: true)
+      }
     })
   }
 
@@ -69,8 +74,8 @@ class TableViewController: UITableViewController,UISearchBarDelegate {
         if let artist = artistmatches["artist"] as? [JSONStandard] {
          
           for item in artist {
-              let usedName = item["name"] as! String
-              let artistUrl = item["url"] as! String
+              let usedName = item["name"] as? String
+              let artistUrl = item["url"] as? String
 
 
                 if let images = item["image"] as? [JSONStandard] {
@@ -82,10 +87,10 @@ class TableViewController: UITableViewController,UISearchBarDelegate {
                       
                           let selectedLargeImageUrl = URL(string: selectedLargeImage["#text"] as! String)
                           let selectedLargeImageData = try! Data(contentsOf: selectedLargeImageUrl!)
-                      let usedLargeImage = UIImage(data: (selectedLargeImageData as? Data)!)
+                      let usedLargeImage = UIImage(data: (selectedLargeImageData as Data))
                       
-                      let selectedSmallImageData = try? Data(contentsOf: selectedSmallImageUrl)
-                      let usedSmallImage = UIImage(data: (selectedSmallImageData as? Data)!)
+                      let selectedSmallImageData = try! Data(contentsOf: selectedSmallImageUrl)
+                      let usedSmallImage = UIImage(data: (selectedSmallImageData as Data))
                       
                       artistImageAndName.append(ArtistImageAndName.init(usedImage: usedSmallImage, usedName: usedName, artistUrlLink: artistUrl, artistLargeImage: usedLargeImage))
                     } else {

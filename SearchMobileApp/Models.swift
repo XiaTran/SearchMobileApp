@@ -1,5 +1,5 @@
 //
-//  Structs.swift
+//  Models.swift
 //  SearchMobileApp
 //
 //  Created by Xia Tran on 19/11/2018.

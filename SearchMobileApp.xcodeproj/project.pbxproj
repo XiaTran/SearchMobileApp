@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5896957969703F69AC60AF55 /* Pods_SearchMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A184E644EEC680146D5EEC /* Pods_SearchMobileApp.framework */; };
-		CD0ACA8B21A3161F004DE364 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACA8A21A3161F004DE364 /* Structs.swift */; };
+		CD0ACA8B21A3161F004DE364 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACA8A21A3161F004DE364 /* Models.swift */; };
 		CD8C9A20219C373B00509112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A1F219C373B00509112 /* AppDelegate.swift */; };
 		CD8C9A22219C373B00509112 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C9A21219C373B00509112 /* TableViewController.swift */; };
 		CD8C9A25219C373B00509112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8C9A23219C373B00509112 /* Main.storyboard */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		25A184E644EEC680146D5EEC /* Pods_SearchMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97351ADC6D489C7B893C8D9F /* Pods-SearchMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMobileApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchMobileApp/Pods-SearchMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
-		CD0ACA8A21A3161F004DE364 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		CD0ACA8A21A3161F004DE364 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CD8C9A1C219C373B00509112 /* SearchMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8C9A1F219C373B00509112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD8C9A21219C373B00509112 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CD8C9A1F219C373B00509112 /* AppDelegate.swift */,
-				CD0ACA8A21A3161F004DE364 /* Structs.swift */,
+				CD0ACA8A21A3161F004DE364 /* Models.swift */,
 				CD8C9A21219C373B00509112 /* TableViewController.swift */,
 				CD8C9A55219DBB3F00509112 /* ArtistView.swift */,
 				CD8C9A23219C373B00509112 /* Main.storyboard */,
@@ -213,7 +213,7 @@
 			files = (
 				CD8C9A22219C373B00509112 /* TableViewController.swift in Sources */,
 				CD8C9A56219DBB3F00509112 /* ArtistView.swift in Sources */,
-				CD0ACA8B21A3161F004DE364 /* Structs.swift in Sources */,
+				CD0ACA8B21A3161F004DE364 /* Models.swift in Sources */,
 				CD8C9A20219C373B00509112 /* AppDelegate.swift in Sources */,
 				CD8C9A28219C373B00509112 /* SearchMobileApp.xcdatamodeld in Sources */,
 			);
